@@ -13,7 +13,8 @@ export default function NavBar() {
         { label: "Objetivo", route: "#objetivo" },
         { label: "Creación", route: "#creacion" },
         { label: "Procedimiento", route: "#procedimiento" },
-        { label: "Seguridad", route: "#consideraciones-seguridad" }
+        { label: "Seguridad", route: "#consideraciones-seguridad" },
+        { label: "Conclusión", route: "#conclusion" }
 
     ];
 
@@ -27,7 +28,7 @@ export default function NavBar() {
                     <MenuButton color={"gray-800"} bg={"none"} boxShadow={"none"} _selected={{ bg: "none", }}>
                         <HiOutlineMenu />
                     </MenuButton>
-                    <MenuList className='bg-white/90 backdrop-blur-sm'>
+                    <MenuList className='bg-white/90 backdrop-blur-sm p-10'>
                         {links.map(({ label, route }) => (
                             <MenuItem key={route} className="m-1 ">
                                 <Link href={route} className="inline-block px-3 py-1 rounded relative overflow-hidden group">

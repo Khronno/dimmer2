@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Creacion() {
     return (
-        <div className="p-8 w-[90%]" id="creacion">
+        <div className="p-8 max-w-[90%] mx-auto" id="creacion">
             <div className="bg-gray-300 p-4 rounded-lg md:flex md:items-center md:justify-center shadow-xl">
-                <div>
+                <div className="md:w-1/2 md:pr-8">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-sans mb-4 text-gray-600">
                         Creación
                     </h1>
@@ -37,7 +38,7 @@ export default function Creacion() {
                 <img
                     src="/esquema.png"
                     alt="Esquema"
-                    className="rounded-xl w-max h-auto"
+                    className="rounded-xl w-full md:w-1/2 h-auto"
                 />
             </div>
         </div>
